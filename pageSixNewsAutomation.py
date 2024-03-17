@@ -46,7 +46,7 @@ msg.attach(MIMEText(content, 'html'))
 print("Initializing Server...")
 
 server = smtplib.SMTP(SERVER, PORT)
-server.set_debuglevel(0)
+server.set_debuglevel(1)
 server.ehlo()
 server.starttls()
 server.login(FROM, PASS)
